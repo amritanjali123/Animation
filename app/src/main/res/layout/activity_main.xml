@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/i"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/images" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="zoom"
+
+            android:text="zoom"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="clockwise"
+            android:text="Clockwise"
+            />
+        <Button
+            android:layout_width="80dp"
+
+
+            android:onClick="Fade"
+            android:layout_height="wrap_content"
+            android:text="Fade"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_marginTop="60dp">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="blink"
+
+            android:text="Blink"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="move"
+            android:text="Move"
+            />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:onClick="slide"
+            android:text="Slide"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
